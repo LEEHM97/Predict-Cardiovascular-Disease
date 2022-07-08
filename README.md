@@ -1,3 +1,3 @@
-# Machine-learning web service
+# Predict Cardiovascular Disease
 
-## FLASK API를 활용한 머신러닝 웹서비스 개발
+## FLASK API, Bootstrap을 활용한 심혈관 질환 예측 서비스
