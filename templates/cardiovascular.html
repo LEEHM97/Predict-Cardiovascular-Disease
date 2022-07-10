@@ -27,12 +27,27 @@
     </div> 
     <hr class="my-4">
 
-    <div class="form-group">
+    <div class="form-group row" style="margin-left: 0px;">
+
       <label for="gender"> <h5 class="mb-2">Gender: </h5> 
-        <p class="lead text-black-50 mb-0">성별 - 1:여 2:남</p>
+        <p class="lead text-black-50 mb-0">성별</p>
       </label>
-      <input type="text" class="form-control" id="gender" placeholder="Enter 1 or 2" name="gender"  style="float:right; width:30%" value={{gender}}>
-    </div> 
+
+      <div class="form-check" style="margin-left: 45rem;">
+        <input class="form-check-input" type="radio" name="gender" id="gender2" value="2">
+        <label class="form-check-label" for="gender2">
+          남
+        </label>
+      </div>
+      &nbsp;&nbsp;&nbsp;
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gender" id="gender1" valye="1">
+        <label class="form-check-label" for="gender1">
+          여
+        </label>
+      </div>
+
+    </div>
     <hr class="my-4">
 
     <div class="form-group">
@@ -112,6 +127,7 @@
 
   <!-- Output에 결과값 나타내준다.-->
   <button type="button" class="btn btn-success"> {{ Output }} </button>
+  <button type="button" class="btn btn-success"> {{ gender }} </button>
 </div>
 
 </body>
