@@ -27,26 +27,16 @@
     </div> 
     <hr class="my-4">
 
-    <div class="form-group row" style="margin-left: 0px;">
-
+    <div class="form-group">
       <label for="gender"> <h5 class="mb-2">Gender: </h5> 
         <p class="lead text-black-50 mb-0">성별</p>
       </label>
 
-      <div class="form-check" style="margin-left: 45rem;">
-        <input class="form-check-input" type="radio" name="gender" id="gender2" value="2">
-        <label class="form-check-label" for="gender2">
-          남
-        </label>
-      </div>
-      &nbsp;&nbsp;&nbsp;
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="gender" id="gender1" valye="1">
-        <label class="form-check-label" for="gender1">
-          여
-        </label>
-      </div>
-
+      <select class="form-control" id="gender" name="gender" style="float: right; width:30%">
+        <option selected>Select your gender</option>
+        <option value="2">남</option>
+        <option value="1">여</option>
+      </select>
     </div>
     <hr class="my-4">
 
@@ -84,33 +74,55 @@
 
     <div class="form-group">
       <label for="cholesterol"> <h5 class="mb-2">Cholesterol: </h5> 
-        <p class="lead text-black-50 mb-0">콜레스테롤 수치 - 1:정상 2:비정상 3:매우 비정상</p>
+        <p class="lead text-black-50 mb-0">콜레스테롤 수치</p>
       </label>
-      <input type="text" class="form-control" id="cholesterol" placeholder="Enter 1, 2 or 3" name="cholesterol"  style="float:right; width:30%" value={{cholesterol}}>
+
+      <select class="form-control" id="cholesterol" name="cholesterol" style="float: right; width:30%">
+        <option selected>Select your cholesterol level</option>
+        <option value="1">정상</option>
+        <option value="2">비정상</option>
+        <option value="3">매우 비정상</option>
+      </select>
     </div> 
     <hr class="my-4">
 
     <div class="form-group">
       <label for="gluc"> <h5 class="mb-2">Glucose: </h5> 
-        <p class="lead text-black-50 mb-0">글루코겐 수치 - 1:정상 2:비정상 3:매우 비정상</p>
+        <p class="lead text-black-50 mb-0">글루코겐 수치</p>
       </label>
-      <input type="text" class="form-control" id="gluc" placeholder="Enter 1, 2 or 3" name="gluc"  style="float:right; width:30%" value={{gluc}}>
+
+      <select class="form-control" id="gluc" name="gluc" style="float: right; width:30%">
+        <option selected>Select your glucose level</option>
+        <option value="1">정상</option>
+        <option value="2">비정상</option>
+        <option value="3">매우 비정상</option>
+      </select>
     </div> 
     <hr class="my-4">
 
     <div class="form-group">
       <label for="smoke"> <h5 class="mb-2">Smoking: </h5> 
-        <p class="lead text-black-50 mb-0">흡연 유무 - 1:유 0:무</p>
+        <p class="lead text-black-50 mb-0">흡연 유무</p>
       </label>
-      <input type="text" class="form-control" id="smoke" placeholder="Enter 0 or 1" name="smoke"  style="float:right; width:30%" value={{smoke}}>
+
+      <select class="form-control" id="smoke" name="smoke" style="float: right; width:30%">
+        <option selected>Select whether you smoke</option>
+        <option value="1">흡연자</option>
+        <option value="0">비흡연자</option>
+      </select>
     </div> 
     <hr class="my-4">
 
     <div class="form-group">
       <label for="alco"> <h5 class="mb-2">Alcohol intake: </h5> 
-        <p class="lead text-black-50 mb-0">알콜 섭취 유무 - 1:유 0:무</p>
+        <p class="lead text-black-50 mb-0">알콜 섭취 유무</p>
       </label>
-      <input type="text" class="form-control" id="alco" placeholder="Enter 0 or 1" name="alco"  style="float:right; width:30%" value={{alco}}>
+
+      <select class="form-control" id="alco" name="alco" style="float: right; width:30%">
+        <option selected>Select whether you drink</option>
+        <option value="1">음주 함</option>
+        <option value="0">음주 안함</option>
+      </select>
     </div> 
     <hr class="my-4">
 
@@ -118,7 +130,12 @@
       <label for="active"> <h5 class="mb-2">Physical activity: </h5> 
         <p class="lead text-black-50 mb-0">신체 활동 유무 - 1:유 0:무</p>
       </label>
-      <input type="text" class="form-control" id="active" placeholder="Enter 0 or 1" name="active"  style="float:right; width:30%" value={{active}}>
+
+      <select class="form-control" id="active" name="active" style="float: right; width:30%">
+        <option selected>Select whether you active</option>
+        <option value="1">신체활동 함</option>
+        <option value="0">신체활동 안함</option>
+      </select>
     </div> 
     <hr class="my-4">
 
@@ -127,7 +144,6 @@
 
   <!-- Output에 결과값 나타내준다.-->
   <button type="button" class="btn btn-success"> {{ Output }} </button>
-  <button type="button" class="btn btn-success"> {{ gender }} </button>
 </div>
 
 </body>
