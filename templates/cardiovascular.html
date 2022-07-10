@@ -13,8 +13,17 @@
 
 <div class="container">
   <div class="from_group">
-    <h1 style="text-align:center;"> <br>심혈관계 질환 예측</h1>
-    <img style="max-width: 50%; height: auto; margin-left:17rem;" src="{{url_for('static', filename='image.png')}}" align="middle"/></img>
+    <header class="bg-dark py-5">
+      <div class="container px-4 px-lg-5 my-5">
+          <div class="text-center text-white">
+              <h1 class="display-4 fw-bolder" style="margin-right:30px"> 
+                <img style="max-width: 10%; height: auto;" src="{{url_for('static', filename='image.png')}}" align="middle"/></img>
+                심혈관계 질환 예측</h1>
+              <p class="lead fw-normal text-white-50 mb-0"><br>심혈관계 질환은 심장과 뇌에 혈액을 공급하는 혈관에 이상이 생긴 질환을 말하며,<br>
+                심혈관질환은 높은 사망율을 기록하는 질환 중 하나입니다.</p>
+          </div>
+      </div>
+  </header>
     <br><br>
   </div>
 
@@ -139,11 +148,15 @@
     </div> 
     <hr class="my-4">
 
-    <button type="submit" class="btn btn-primary">Predict</button>
+    <button type="submit" class="btn btn-primary btn-lg btn-block" style="margin-bottom:3rem; width:90%; margin-left:auto; margin-right:auto">Predict</button>
   </form>
 
-  <!-- Output에 결과값 나타내준다.-->
-  <button type="button" class="btn btn-success"> {{ Output }} </button>
+  <div class="form-group", style="margin-bottom:2rem;">
+    <label for="Output"><h3 class="mb-2", style="margin-left: 9rem; margin-top:2px;">나의 예측 결과는? </h3></label>
+    <input type="text" class="form-control form-control-lg" id="Output" placeholder="Your score" name="Output"  
+           style="margin-right:7rem; float:right; width:30%; height:40px;" readonly="readonly" value={{Output}}>
+  </div> 
+
 </div>
 
 </body>
