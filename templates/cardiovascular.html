@@ -29,7 +29,9 @@
 
   <form action="cardiovascular" autocomplete="on">
     <div class="form-group">
-      <label for="age"> <h5 class="mb-2">Age: </h5> 
+      <label for="age"> <h5 class="mb-2">
+        <img style="max-width:7%;" src="{{url_for('static', filename='age.png')}}" align="middle"/></img>
+        Age: </h5> 
         <p class="lead text-black-50 mb-0">나이</p>
       </label>
       <input type="text" class="form-control" id="age" placeholder="Enter your age" name="age"  style="float:right; width:30%" value={{age}}>
@@ -37,7 +39,9 @@
     <hr class="my-4">
 
     <div class="form-group">
-      <label for="gender"> <h5 class="mb-2">Gender: </h5> 
+      <label for="gender"> <h5 class="mb-2">
+        <img style="max-width:6%;" src="{{url_for('static', filename='gender.png')}}" align="middle"/></img>
+        Gender: </h5> 
         <p class="lead text-black-50 mb-0">성별</p>
       </label>
 
@@ -50,15 +54,19 @@
     <hr class="my-4">
 
     <div class="form-group">
-      <label for="height"> <h5 class="mb-2">Height: </h5> 
-        <p class="lead text-black-50 mb-0">당신의 키(cm)</p>
+      <label for="height"> <h5 class="mb-2">
+        <img style="max-width:7%;" src="{{url_for('static', filename='height.png')}}" align="middle"/></img>
+        Height: </h5> 
+        <p class="lead text-black-50 mb-0">키(cm)</p>
       </label>
       <input type="text" class="form-control" id="height" placeholder="Enter your height" name="height"  style="float:right; width:30%" value={{height}}>
     </div> 
     <hr class="my-4">
 
     <div class="form-group">
-      <label for="weight"> <h5 class="mb-2">Weight: </h5> 
+      <label for="weight"> <h5 class="mb-2">
+        <img style="max-width:7%;" src="{{url_for('static', filename='weight.png')}}" align="middle"/></img>
+        Weight: </h5> 
         <p class="lead text-black-50 mb-0">몸무게(kg)</p>
       </label>
       <input type="text" class="form-control" id="weight" placeholder="Enter your weight" name="weight"  style="float:right; width:30%" value={{weight}}>
@@ -66,7 +74,9 @@
     <hr class="my-4">
 
     <div class="form-group">
-      <label for="ap_hi"> <h5 class="mb-2">Systolic blood pressure: </h5> 
+      <label for="ap_hi"> <h5 class="mb-2">
+        <img style="max-width:6%;" src="{{url_for('static', filename='ap_hi.png')}}" align="middle"/></img>
+        Systolic blood pressure: </h5> 
         <p class="lead text-black-50 mb-0">수축기 혈압(mmHg)</p>
       </label>
       <input type="text" class="form-control" id="ap_hi" placeholder="Enter your ap_hi" name="ap_hi"  style="float:right; width:30%" value={{ap_hi}}>
@@ -74,7 +84,9 @@
     <hr class="my-4">
 
     <div class="form-group">
-      <label for="ap_lo"> <h5 class="mb-2">Diastolic blood pressure: </h5> 
+      <label for="ap_lo"> <h5 class="mb-2">
+        <img style="max-width:6%;" src="{{url_for('static', filename='ap_lo.png')}}" align="middle"/></img>
+        Diastolic blood pressure: </h5> 
         <p class="lead text-black-50 mb-0">이완기 혈압(mmHg)</p>
       </label>
       <input type="text" class="form-control" id="ap_lo" placeholder="Enter your ap_low" name="ap_lo"  style="float:right; width:30%" value={{ap_lo}}>
@@ -82,7 +94,9 @@
     <hr class="my-4">
 
     <div class="form-group">
-      <label for="cholesterol"> <h5 class="mb-2">Cholesterol: </h5> 
+      <label for="cholesterol"> <h5 class="mb-2">
+        <img style="max-width:7%;" src="{{url_for('static', filename='cholesterol.png')}}" align="middle"/></img>
+        Cholesterol: </h5> 
         <p class="lead text-black-50 mb-0">콜레스테롤 수치</p>
       </label>
 
@@ -96,8 +110,10 @@
     <hr class="my-4">
 
     <div class="form-group">
-      <label for="gluc"> <h5 class="mb-2">Glucose: </h5> 
-        <p class="lead text-black-50 mb-0">글루코겐 수치</p>
+      <label for="gluc"> <h5 class="mb-2">
+        <img style="max-width:7%;" src="{{url_for('static', filename='gluc.png')}}" align="middle"/></img>
+        Glucose: </h5> 
+        <p class="lead text-black-50 mb-0">포도당 수치</p>
       </label>
 
       <select class="form-control" id="gluc" name="gluc" style="float: right; width:30%">
@@ -110,7 +126,9 @@
     <hr class="my-4">
 
     <div class="form-group">
-      <label for="smoke"> <h5 class="mb-2">Smoking: </h5> 
+      <label for="smoke"> <h5 class="mb-2">
+        <img style="max-width:6%;" src="{{url_for('static', filename='smoke.png')}}" align="middle"/></img>
+        Smoking: </h5> 
         <p class="lead text-black-50 mb-0">흡연 유무</p>
       </label>
 
@@ -123,7 +141,9 @@
     <hr class="my-4">
 
     <div class="form-group">
-      <label for="alco"> <h5 class="mb-2">Alcohol intake: </h5> 
+      <label for="alco"> <h5 class="mb-2">
+        <img style="max-width:6%;" src="{{url_for('static', filename='alco.png')}}" align="middle"/></img>
+        Alcohol intake: </h5> 
         <p class="lead text-black-50 mb-0">알콜 섭취 유무</p>
       </label>
 
@@ -136,8 +156,10 @@
     <hr class="my-4">
 
     <div class="form-group">
-      <label for="active"> <h5 class="mb-2">Physical activity: </h5> 
-        <p class="lead text-black-50 mb-0">신체 활동 유무 - 1:유 0:무</p>
+      <label for="active"> <h5 class="mb-2">
+        <img style="max-width:7%;" src="{{url_for('static', filename='active.png')}}" align="middle"/></img>
+        Physical activity: </h5> 
+        <p class="lead text-black-50 mb-0">신체 활동 유무</p>
       </label>
 
       <select class="form-control" id="active" name="active" style="float: right; width:30%">
